@@ -24,16 +24,16 @@ title: Random Pokémon
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-    fetch('/.netlify/functions/random_pokemon')
-      .then(response => response.json())
-      .then(data => {
-        document.getElementById('pokemon-name').textContent = data.name;
-        document.getElementById('pokemon-image').src = data.imageUrl;
-        document.getElementById('pokemon-image').alt = data.name;
-      })
-      .catch(error => {
-        console.error('Error fetching random pokemon:', error);
-      });
+      fetch('/.netlify/functions/random_pokemon')
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById('pokemon-name').textContent = data.name;
+          document.getElementById('pokemon-image').src = data.imageUrl;
+          document.getElementById('pokemon-image').alt = data.name;
+        })
+        .catch(error => {
+          console.error('Error fetching random pokemon:', error);
+        });
     });
   </script>
 </body>
