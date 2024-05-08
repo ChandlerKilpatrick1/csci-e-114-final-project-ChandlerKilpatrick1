@@ -18,7 +18,7 @@ title: Random Pokémon
 <body>
   <h1>Random Pokémon</h1>
 
-  <script>
+  <!-- <script>
     document.addEventListener('DOMContentLoaded', function() {
       fetch('/.netlify/functions/random_pokemon')
         .then(response => response.json())
@@ -36,6 +36,21 @@ title: Random Pokémon
 <div id="random-pokemon-container">
   <h2 id="pokemon-name"></h2>
   <img id="pokemon-image" alt="Random Pokémon">
-</div>
+</div> -->
+<script>
+  fetch('/.netlify/functions/random_pokemon')
+    .then(response => response.json())
+    .then(data => {
+      if (data.name && data.imageUrl) {
+        document.getElementById('pokemon-name').textContent = data.name;
+        document.getElementById('pokemon-image').src = data.imageUrl;
+        document.getElementById('pokemon-image').alt = `Image of ${data.name}`;
+      }
+    })
+    .catch(error => console.error('Error fetching random pokemon:', error));
+</script>
+
+<h1 id="pokemon-name"></h1>
+<img id="pokemon-image" alt="Random Pokemon Image">
 
 </body>
