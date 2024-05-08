@@ -139,8 +139,12 @@ img {
     color: #d53b47;
     text-transform: uppercase;
   }
+  .individual-pokemon p {
+    color: #d53b47;
+    text-decoration: double;
+  }
 
-  /* .pokemon-image {
+  .pokemon-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -150,4 +154,4 @@ img {
   /* .pokemon-name {
     text-align: center;
     text-transform: capitalize;
-  } */
+  }
