@@ -63,15 +63,9 @@ li {
 img {
     max-width: 100%; 
     height: auto;
-
 }
 
-
-
-
-
-
-/* Basic reset */
+/* General */
 * {
   margin: 0;
   padding: 0;
@@ -144,6 +138,10 @@ a:hover {
   text-decoration: double;
 }
 
+.individual-pokemon footer {
+  color: white;
+}
+
 .pokemon-container {
   display: flex;
   flex-direction: column;
@@ -152,4 +150,7 @@ a:hover {
 
 .pokemon-container img {
   margin-top: 20px;
+}
+.poke_man {
+  text-transform: uppercase;
 }
