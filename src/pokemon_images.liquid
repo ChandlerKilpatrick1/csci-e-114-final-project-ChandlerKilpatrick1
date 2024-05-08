@@ -19,19 +19,19 @@ title: Random Pokémon
   <h1>Random Pokémon</h1>
   <div id="random-pokemon-container">
     <h2 id="pokemon-name"></h2>
-    <img id="pokemon-image" src="" alt="Random Pokémon">
+    <img id="pokemon-image" src=" " alt="Random Pokémon">
   </div>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      fetch('/.netlify/functions/random_pokemon')
-        .then(response => response.json())
-        .then(data => {
-          document.getElementById('pokemon-name').textContent = data.name;
-          document.getElementById('pokemon-image').src = data.imageUrl;
-          document.getElementById('pokemon-image').alt = data.name;
-        })
-        .catch(error => console.error(error));
-    });
+    // document.addEventListener('DOMContentLoaded', function() {
+    fetch('/.netlify/functions/random_pokemon')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('pokemon-name').textContent = data.name;
+        document.getElementById('pokemon-image').src = data.imageUrl;
+        document.getElementById('pokemon-image').alt = data.name;
+      })
+      .catch(error => console.error(error));
+    // });
   </script>
 </body>
