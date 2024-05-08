@@ -3,7 +3,7 @@ layout: base
 title: Random Pokémon
 ---
 <!-- Local Version -->
-<header>
+<!-- <header>
   <h1>Random Pokémon</h1>
     <a href="/index">Back to Homepage</a>
 </header>
@@ -14,4 +14,24 @@ title: Random Pokémon
     <h2>{{ random_pokemon.name | capitalize }}</h2>
     <img src="{{ random_pokemon.imageUrl }}" alt="{{ random_pokemon.name | capitalize }}">
   </div>
+</body> -->
+<body>
+  <h1>Random Pokémon</h1>
+  <div id="random-pokemon-container">
+    <h2 id="pokemon-name"></h2>
+    <img id="pokemon-image" src="" alt="Random Pokémon">
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('/.netlify/functions/randomPokemon')
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById('pokemon-name').textContent = data.name;
+          document.getElementById('pokemon-image').src = data.imageUrl;
+          document.getElementById('pokemon-image').alt = data.name;
+        })
+        .catch(error => console.error(error));
+    });
+  </script>
 </body>
