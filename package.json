@@ -1,0 +1,26 @@
+{
+  "name": "cscie114-assignment-2-eleventy-chandlerkilpatrick1",
+  "version": "1.0.0",
+  "description": "This purpose of this assignment is to become familiar with Eleventy (11ty).  You'll get 11ty up and running from scratch and use some key features, including using data from APIs.",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "eleventy",
+    "test": "mocha",
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "dotenv": "^16.4.5",
+    "globals": "^15.0.0",
+    "mocha": "^10.4.0",
+    "netlify-cli": "^17.22.1"
+  },
+  "dependencies": {
+    "@11ty/eleventy-fetch": "^4.0.0",
+    "node-fetch": "^3.3.2"
+  }
+}

@@ -1,0 +1,141 @@
+body {
+    font-family: sans-serif;
+    margin: 5;
+    background-color: lightgray;
+    color: black;
+}
+p{
+    padding: 5px;
+}
+h1{ 
+    text-align: center;
+}
+footer {
+    background-color: #3b4cca;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+
+}
+header a{
+    padding-left: 2rem;
+}
+
+
+
+/* INDEX Page */
+.page_links ul {
+    background-color: white; 
+    margin-bottom: 5px; 
+    padding: 5px; 
+}
+
+.page_links li {
+    background-color: white; 
+    margin-bottom: 5px; 
+    padding: 5px; 
+    border-radius: 5px; 
+    gap: 5px;
+    max-width: 95%;
+    border: 5px solid #d53b47;
+
+}
+h2 {
+    padding-left: 1rem;
+}
+
+
+
+ul {
+    display: flex;
+    flex-wrap: wrap; 
+    padding: 5%;
+    gap: 8%; 
+}
+li {
+    flex: 1; 
+    min-width: 250px;
+    background-color: white;
+    padding: 3%;
+    margin-top: 5px;
+}
+img {
+    max-width: 100%; 
+    height: auto;
+
+}
+
+
+
+
+
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header styles */
+  h1 {
+    background-color: #ffcb05;
+    color: #3b4cca;
+    padding: 1rem; 
+    text-align: center;
+  }
+  
+  /* Link styles */
+  a {
+    color: #3b4cca;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .all-pokemon-page a {
+    padding-left: 1rem;
+  }
+  
+  /* list styles */
+  .pokemon-list {
+    list-style: none;
+    padding: 1rem;
+  }
+  
+  .pokemon-list li {
+    background-color: #fff;
+    border: 4px solid #d53b47;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    padding: 0.75rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pokemon-list li:hover {
+    background-color: #f3f3f3;
+  }
+
+  .pokemon-list a {
+    text-transform: uppercase;
+  }
+  
+  /* Individul Pokémon page styles */
+  .individual-pokemon {
+    padding: 1rem;
+  }
+  
+  .individual-pokemon h1 {
+    color: #d53b47;
+    text-transform: uppercase;
+  }

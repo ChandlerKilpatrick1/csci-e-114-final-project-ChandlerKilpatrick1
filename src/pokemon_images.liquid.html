@@ -1,0 +1,17 @@
+---
+layout: base
+title: Random Pokémon
+---
+<!-- Local Version -->
+<header>
+  <h1>Random Pokémon</h1>
+    <a href="/index">Back to Homepage</a>
+</header>
+
+<body>
+
+  <div class="random-pokemon">
+    <h2>{{ random_pokemon.name | capitalize }}</h2>
+    <img src="{{ random_pokemon.imageUrl }}" alt="{{ random_pokemon.name | capitalize }}">
+  </div>
+</body>

@@ -1,0 +1,22 @@
+<!-- ---
+layout: base.liquid
+title: Hello Page
+---
+
+<h1>Dogs!!!</h1>
+<a href="/">Back to FIRST Page</a>
+
+<p>This page has been updated. Please enjoy a random dog to brighten your day!</p>
+
+<script>
+    fetch('/.netlify/functions/dogs')
+      .then(response => response.json())
+      .then(data => {
+        if (data.imageUrl) {
+          document.getElementById('dog-image').src = data.imageUrl;
+        }
+      })
+      .catch(error => console.error('Error fetching dog image:', error));
+</script>
+  
+<img id="dog-image" alt="Random Dog Image"> -->

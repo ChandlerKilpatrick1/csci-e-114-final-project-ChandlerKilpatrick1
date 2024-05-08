@@ -1,0 +1,34 @@
+---
+layout: base.liquid
+pagination: 
+  data: kanto
+  size: 1
+  alias: pokemon
+  addAllPagesToCollections: true
+permalink: "pokemon/{{ pokemon.name }}/"
+eleventyComputed:
+  title: "{{ pokemon.name }}"
+---
+
+<body class="individual-pokemon">
+    <a href="/all-pokemon">Back to All Pokémon</a>
+
+    <h1>{{ pokemon.name }}</h1>
+    <p>Pokedex ID Number: {{ pokemon.entry_number }}</p>
+    <p>Species URL: {{ pokemon.url }}</p>
+    <p>Common Habitat Biome {{ pokemon.details.habitat }} </p>
+    <!-- <p>Weight: {{ pokemon.details.form_descriptions }}</p> -->
+    <p>Base Happiness Level: {{ pokemon.details.baseHappiness }}</p>
+    <p>Common Color: {{ pokemon.details.colorName }}</p>
+    <p>Growth Rate (evolution rate): {{ pokemon.details.growthRate }}</p>
+    <p>Observation Notes: {{ pokemon.details.flavorText }}</p>
+    <!-- <p>Species URL: {{ pokemon.details.formDescriptions }}</p> -->
+
+
+
+</body>
+
+
+
+
+

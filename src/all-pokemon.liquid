@@ -1,0 +1,19 @@
+---
+layout: base
+title: Kanto Pokémon
+---
+
+<body class="all-pokemon-page">
+<h1>Kanto Pokémon</h1>
+<a href="/">Home Page</a>
+<ul class="pokemon-list">
+    {% for pokemon in kanto %}
+    <li>
+        <a href="/pokemon/{{ pokemon.name }}/">{{ pokemon.name }}</a>
+    </li>
+    {% else %}
+    <li>No Pokémon found.</li>
+    {% endfor %}
+</ul>
+
+</body>
