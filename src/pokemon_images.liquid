@@ -23,7 +23,7 @@ title: Random Pokémon
   </div>
 
   <script>
-    // document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function() {
     fetch('/.netlify/functions/random_pokemon')
       .then(response => response.json())
       .then(data => {
@@ -32,6 +32,6 @@ title: Random Pokémon
         document.getElementById('pokemon-image').alt = data.name;
       })
       .catch(error => console.error(error));
-    // });
+    });
   </script>
 </body>
