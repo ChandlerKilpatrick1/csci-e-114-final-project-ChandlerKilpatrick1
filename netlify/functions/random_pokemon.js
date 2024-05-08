@@ -1,7 +1,7 @@
 
-// const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 
-import fetch from 'node-fetch';
+// import fetch from 'node-fetch';
 exports.handler = async function(event, context) {
   const apiUrl = 'https://pokeapi.co/api/v2/pokemon?limit=1000';
 
