@@ -24,7 +24,7 @@ title: Random Pokémon
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      fetch('/.netlify/functions/randomPokemon')
+      fetch('/.netlify/functions/random_pokemon')
         .then(response => response.json())
         .then(data => {
           document.getElementById('pokemon-name').textContent = data.name;
