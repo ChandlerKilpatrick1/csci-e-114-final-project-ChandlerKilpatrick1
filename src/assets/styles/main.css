@@ -140,14 +140,14 @@ img {
     text-transform: uppercase;
   }
 
-  .pokemon-image {
+  /* .pokemon-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
     
-  }
+  } */
   
-  .pokemon-name {
+  /* .pokemon-name {
     text-align: center;
     text-transform: capitalize;
-  }
+  } */
